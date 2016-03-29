@@ -1,0 +1,21 @@
+Name: Sihan Chen
+student ID: 4452332
+X500: chen2436
+
+Description: A struct msg_t provided in the message.h is used as message to transfer between the server and host. Client send the first request message with the file name it want to download, then server start to send the file. After receive a message, client will send out an acknowledge message to the server. After the file download completed, client will send out a finish message to the server to indicate file download completed. 
+
+
+Makefile: For the server side type in command: make servers
+	  For the client side type in command: make clients
+
+After that, 
+
+For the tcp:
+./server_tcp <port number>
+./client_tcp <server> <port number> <file name>
+
+For the udp:
+./server_udp <port number>
+./client_udp <server> <port number> <file name>
+
+
